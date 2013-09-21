@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Adnl")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP")]
+[assembly: AssemblyCompany("Giacomo Tagliabue")]
 [assembly: AssemblyProduct("Adnl")]
-[assembly: AssemblyCopyright("Copyright © HP 2013")]
+[assembly: AssemblyCopyright("Copyright © Giacomo Tagliabue")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
