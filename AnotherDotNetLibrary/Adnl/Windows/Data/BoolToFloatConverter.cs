@@ -16,11 +16,11 @@ namespace Adnl.Windows.Data
         /// </summary>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (!(bool)value)
+            if (!(bool) value)
             {
-                return (float)parameter;
+                return (float) parameter;
             }
-            return (float)1;
+            return (float) 1;
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Adnl.Windows.Data
         /// <returns></returns>
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if ((float)value == 1) return true;
+            if ((float) value == 1) return true;
             return false;
         }
 

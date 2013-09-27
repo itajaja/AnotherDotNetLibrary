@@ -16,7 +16,7 @@ namespace Adnl.Windows.Data
         /// </summary>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var val = (int)value;
+            var val = (int) value;
             int par = int.Parse(parameter.ToString());
             return val != par;
         }

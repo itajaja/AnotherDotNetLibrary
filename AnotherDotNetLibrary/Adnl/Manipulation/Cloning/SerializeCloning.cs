@@ -21,7 +21,7 @@ namespace Adnl.Manipulation.Cloning
                 var formatter = new BinaryFormatter();
                 formatter.Serialize(stream, a);
                 stream.Position = 0;
-                return (T)formatter.Deserialize(stream);
+                return (T) formatter.Deserialize(stream);
             }
         }
     }

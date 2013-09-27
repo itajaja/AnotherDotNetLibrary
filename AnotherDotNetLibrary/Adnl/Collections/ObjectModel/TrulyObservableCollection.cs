@@ -4,7 +4,6 @@ using System.ComponentModel;
 
 namespace Adnl.Collections.ObjectModel
 {
-
     /// <summary>
     /// Represents a dynamic data collection that provides notifications when items get added, removed, when the whole list is refreshed, or when any element fires a PropertyChanged Event.
     /// </summary>

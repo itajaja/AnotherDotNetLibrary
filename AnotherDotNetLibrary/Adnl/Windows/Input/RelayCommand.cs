@@ -11,8 +11,8 @@ namespace Adnl.Windows.Input
     {
         #region Fields
 
-        private readonly Action<object> _execute;
         private readonly Predicate<object> _canExecute;
+        private readonly Action<object> _execute;
 
         #endregion
 
