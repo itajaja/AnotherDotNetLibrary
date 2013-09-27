@@ -10,6 +10,10 @@ namespace Adnl.Windows.Threading
     {
         #region Constructors and Destructors
 
+        /// <summary>
+        /// Initializes a new instance of the DispatcherTimeout class which processes timer events at the specified priority.
+        /// </summary>
+        /// <param name="priority">The priority at which to invoke the timer.</param>
         protected DispatcherTimeout(DispatcherPriority priority)
             : base(priority)
         {
@@ -19,6 +23,9 @@ namespace Adnl.Windows.Threading
 
         #region Public Properties
 
+        /// <summary>
+        /// Gets or sets the callback which should be called on tick.
+        /// </summary>
         public Action<DispatcherTimeout> Callback { get; set; }
 
         #endregion

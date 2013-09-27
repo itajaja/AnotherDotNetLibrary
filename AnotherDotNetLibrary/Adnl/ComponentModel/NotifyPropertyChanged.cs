@@ -30,7 +30,7 @@ namespace Adnl.ComponentModel
         /// <param name="field">the private field to set</param>
         /// <param name="value">the value for the field</param>
         /// <param name="propertyName">the name of the property for firing OnPropertyChanged</param>
-        /// <returns></returns>
+        /// <returns>returns true if the field was actually changed</returns>
         protected bool SetField<T>(ref T field, T value, string propertyName)
         {
             if (EqualityComparer<T>.Default.Equals(field, value)) return false;

@@ -4,9 +4,16 @@ using System.ComponentModel;
 
 namespace Adnl.Collections.ObjectModel
 {
+
+    /// <summary>
+    /// Represents a dynamic data collection that provides notifications when items get added, removed, when the whole list is refreshed, or when any element fires a PropertyChanged Event.
+    /// </summary>
     public sealed class TrulyObservableCollection<T> : ObservableCollection<T>
         where T : INotifyPropertyChanged
     {
+        /// <summary>
+        /// Initializes a new instance of the TrulyObservableCollection class.
+        /// </summary>
         public TrulyObservableCollection()
         {
             CollectionChanged += TrulyObservableCollection_CollectionChanged;
