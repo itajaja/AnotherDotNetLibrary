@@ -4,18 +4,19 @@ using System.Windows.Data;
 
 namespace Adnl.Windows.Data
 {
+    /// <summary>
+    /// Provides binding conversion from Date to its short time representation.
+    /// </summary>
     public class DateToShortTimeStringConverter : IValueConverter
     {
         #region IValueConverter Members
 
+        /// <summary>
+        /// Returns ((DateTime)value).ToShortTimeString().
+        /// </summary>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var date = value as DateTime?;
-            if (date != null)
-            {
-                return ((DateTime)date).ToShortTimeString();
-            }
-            return null;
+            return ((DateTime)value).ToShortTimeString();
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

@@ -11,7 +11,7 @@ namespace Adnl.Windows.Input
         private readonly Action<object> _execute;
         private readonly Predicate<object> _canExecute;
 
-        #endregion // Fields
+        #endregion
 
         #region Constructors
 
@@ -27,7 +27,7 @@ namespace Adnl.Windows.Input
             _canExecute = canExecute;
         }
 
-        #endregion // Constructors
+        #endregion
 
         #region ICommand Members
 
@@ -48,6 +48,6 @@ namespace Adnl.Windows.Input
             _execute(parameter);
         }
 
-        #endregion // ICommand Members
+        #endregion
     }
 }

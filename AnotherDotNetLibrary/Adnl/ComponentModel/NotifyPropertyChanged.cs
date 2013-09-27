@@ -6,7 +6,7 @@ namespace Adnl.ComponentModel
 
     /// <summary>
     ///     Abstract base class that implements the INotifyPropertyChanged interface with some utility methods to write
-    ///     properties
+    ///     properties.
     /// </summary>
     public abstract class NotifyPropertyChanged : INotifyPropertyChanged
     {
@@ -25,7 +25,7 @@ namespace Adnl.ComponentModel
         #region methods
 
         /// <summary>
-        ///     Set the private field with the passed value, and fires OnPropertyChanged with the given property name
+        ///     Set the private field with the passed value, and fires OnPropertyChanged with the given property name.
         /// </summary>
         /// <param name="field">the private field to set</param>
         /// <param name="value">the value for the field</param>

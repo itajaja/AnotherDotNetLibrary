@@ -5,12 +5,15 @@ using System.Windows.Data;
 namespace Adnl.Windows.Data
 {
     /// <summary>
-    ///     returns true if value.Equals(parameter) is true
+    /// Provides binding conversion to an equality check for two objects.
     /// </summary>
     public class EqualsToTrueConverter : IValueConverter
     {
         #region IValueConverter Members
 
+        /// <summary>
+        /// Returns true if value.Equals(parameter) is true
+        /// </summary>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value != null)
