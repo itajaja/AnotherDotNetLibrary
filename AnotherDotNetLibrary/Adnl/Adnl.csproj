@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Collections\ObjectModel\TrulyObservableCollection.cs" />
     <Compile Include="ComponentModel\NotifyPropertyChanged.cs" />
-    <Compile Include="IO\Class1.cs" />
     <Compile Include="Manipulation\Cloning\IShallowCloneable.cs" />
     <Compile Include="Manipulation\Cloning\IDeepCloneable.cs" />
     <Compile Include="Manipulation\Cloning\SerializeCloning.cs" />
@@ -65,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
