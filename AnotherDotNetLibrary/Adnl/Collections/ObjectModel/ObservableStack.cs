@@ -29,7 +29,6 @@ namespace Adnl.Collections.ObjectModel
             RaiseCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
         }
 
-
         /// <summary>
         /// Removes and returns the object at the top of the Stack.
         /// </summary>
@@ -40,7 +39,7 @@ namespace Adnl.Collections.ObjectModel
         public new T Pop()
         {
             T item = base.Pop();
-            RaiseCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove));
+            RaiseCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, item, Count));
             return item;
         }
 
