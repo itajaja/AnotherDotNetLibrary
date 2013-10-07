@@ -43,6 +43,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\ObjectModel\ObservableStack.cs" />
     <Compile Include="Collections\ObjectModel\TrulyObservableCollection.cs" />
     <Compile Include="ComponentModel\NotifyPropertyChanged.cs" />
     <Compile Include="Manipulation\Cloning\IShallowCloneable.cs" />
