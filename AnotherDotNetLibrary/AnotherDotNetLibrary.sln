@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adnl", "Adnl\Adnl.csproj", "{0EE32757-75E3-4475-8E5C-2091AF6DC4A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{5AA5928D-6E02-4BF1-B5C6-593574872213}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{0EE32757-75E3-4475-8E5C-2091AF6DC4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EE32757-75E3-4475-8E5C-2091AF6DC4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EE32757-75E3-4475-8E5C-2091AF6DC4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA5928D-6E02-4BF1-B5C6-593574872213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA5928D-6E02-4BF1-B5C6-593574872213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA5928D-6E02-4BF1-B5C6-593574872213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA5928D-6E02-4BF1-B5C6-593574872213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

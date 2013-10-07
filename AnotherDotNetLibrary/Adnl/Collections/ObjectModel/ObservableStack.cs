@@ -4,7 +4,10 @@ using System.ComponentModel;
 
 namespace Adnl.Collections.ObjectModel
 {
-    class ObservableStack<T> : Stack<T>, INotifyCollectionChanged, INotifyPropertyChanged
+    /// <summary>
+    /// Represent a stack that notifies listeners of dynamic changes, such as when items get pushed and popped or the whole stack is cleared.
+    /// </summary>
+    public class ObservableStack<T> : Stack<T>, INotifyCollectionChanged, INotifyPropertyChanged
     {
         public event NotifyCollectionChangedEventHandler CollectionChanged;
 
@@ -50,7 +53,7 @@ namespace Adnl.Collections.ObjectModel
         public new void Push(T item)
         {
             base.Push(item);
-            RaiseCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add));
+            RaiseCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item, 0));
         }
 
         private void RaiseCollectionChanged(NotifyCollectionChangedEventArgs e)
